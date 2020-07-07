@@ -1,0 +1,280 @@
+/* Quitamos los margenes y padding que el navegador nos pone por defecto */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+/* Hacemos las modificaciones pertinentes para el header*/
+
+.contenedor-header{
+    display: flex;
+    width: 100%;
+    height: 250px;
+    background-image: url('../img/fondo.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-header{
+    width: 70%;
+    border: dashed 1px #ffffff; 
+    padding: 10px;
+}
+
+.texto-header h1{
+    color: #ffffff;
+    text-align: center;
+}
+
+
+
+
+/* Indicamos que el contenedor de los demas div tambiens era flex */
+.sesion1{
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.imagen-main{
+    width: 50%;
+    /*background: rosybrown;*/
+    padding-top: 20px;
+}
+
+.imagen-main img{
+    width: 70%;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.texto-main{
+    width: 50%;
+   /* background: skyblue; */
+    padding: 40px 60px 10px 20px;
+    text-align: left;
+}
+
+.texto-main h1{
+    color: #009881;
+}
+
+.texto-main p{
+    font-size: 20px;
+}
+
+
+/* Iniciamos la segunda 2 session */
+
+.sesion2{
+    display: flex;
+    width: 100%;
+    height: auto;
+    background:#f7f7f7;
+}
+
+.codigo{
+    width: 65%;
+    margin: 10px;
+}
+
+.codigo textarea{
+    width: 100%;
+    max-width: 100%;
+    max-height: 150px;
+    min-width: 100%;
+    min-height:150px;
+}
+
+.explicacodigo{
+    width: 35%;
+    padding: 17px;
+}
+
+.explicacodigo p{
+    text-align: center;
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+.explicacodigo  .Naranja{
+    color: rgb(255, 145, 0);
+}
+
+.explicacodigo  .Azul{
+    color: #33beff;
+}
+
+
+/* Iniciamos la tercera 3 session */
+
+.sesion3{
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 35px;
+}
+
+.proyecto1{
+    width: 25%;
+    height: 250px;
+}
+
+.proyecto2{
+    width: 25%;
+    height: 250px;
+}
+
+.proyecto3{
+    width: 25%;
+    height: 250px;
+}
+
+.proyecto4{
+    width: 25%;
+    height: 250px;
+}
+
+.imgp1{
+    height: 80%;
+}
+
+.imgp1 img{
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 3%;
+}
+
+.txtp1{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.txtp1 .Naranja{
+    color: rgb(255, 145, 0);
+}
+.txtp1 .Azul{
+    color: #33beff;
+}
+.txtp1 .Amarillo{
+    color: #c0d510
+}
+.txtp1 .Morado{
+    color: #6177fc;
+}
+
+/*Realizamos la parte del footer*/
+
+footer{
+    width: 100%;
+    height: 60px;
+    margin-top: 20px;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/fondo.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    border-radius: 5px 5px 5px 5px;
+    flex-wrap: wrap;
+}
+
+
+.imagenesfooter{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.imagenesfooter img{
+    width: 40px;
+    height: 40px;
+    max-width: 100%;
+    max-width: 100%;
+}
+
+.gi{
+    margin: 0 10px;
+}
+
+.lin{
+    margin: 0 10px;
+}
+
+@media screen and (max-width:576px){
+
+    .sesion2 .codigo{
+        margin-left: 30px;
+    }
+
+    .contenedor-header{
+        height: 100px;
+        height: auto;
+    }
+
+    .texto-header{
+        font-size: 26px;
+        margin: 10px;
+    }
+
+    .texto-header h1{
+        font-size: 26px;
+    }
+
+    .sesion1{
+        flex-wrap: wrap;
+    }
+
+    .imagen-main{
+        width: 100%;
+        
+    }
+    
+    .texto-main{
+        width: 100%;
+        
+        text-align: center;
+    }
+
+    .texto-main p{
+        font-size: 18px;
+    }
+
+/*Cambiamos el tamano de los proyectos*/
+    
+.sesion3{
+    flex-wrap: wrap;
+}    
+
+.imgp1{
+    height: 60%;
+}
+
+    .proyecto1,
+    .proyecto2,
+    .proyecto3,
+    .proyecto4{
+        width: 50%;
+        height: 190px;
+        
+    }
+    
+   
+
+}
